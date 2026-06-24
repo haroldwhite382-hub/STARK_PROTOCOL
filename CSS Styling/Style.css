@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'Orbitron';
+  src: url('../Assets/Fonts/Orbitron-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('../Assets/Fonts/Rajdhani-Medium.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0B0F19;
+  background-image:
+    linear-gradient(rgba(94, 223, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(94, 223, 255, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+  color: #FFFFFF;
+  font-family: 'Rajdhani', sans-serif;
+  overflow-x: hidden;
+}
+
+#arrival-hall {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.figure img {
+  width: 28vw;
+  max-height: 60vh;
+  object-fit: contain;
+}
+
+.figure-label {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 4px;
+  color: #5EDFFF;
+  text-align: center;
+  margin-top: 10px;
+  text-transform: uppercase;
+  text-shadow: 0 0 8px rgba(94, 223, 255, 0.6);
+}
+
+#jarvis-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+#jarvis-text {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.7rem;
+  color: #5EDFFF;
+  letter-spacing: 2px;
+  line-height: 1.6;
+}
+
+#enter-btn {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  color: #5EDFFF;
+  background: transparent;
+  border: 1px solid #5EDFFF;
+  padding: 7px 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
