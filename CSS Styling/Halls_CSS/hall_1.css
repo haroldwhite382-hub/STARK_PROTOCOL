@@ -85,3 +85,17 @@
   color: rgba(94, 223, 255, 0.6);
   margin-top: 10px;
 }
+
+#next-btn {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  color: #5EDFFF;
+  background: transparent;
+  border: 1px solid #5EDFFF;
+  padding: 7px 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding-bottom: 20px 10px;
+}
