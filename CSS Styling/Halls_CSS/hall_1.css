@@ -8,6 +8,10 @@
   src: url('../Assets/Fonts/Rajdhani-Medium.ttf');
 }
 
+body {
+    transition: opacity 0.5s ease;
+}
+
 #hall_1 {
     max-width: 900px;
     margin: 0px auto;
