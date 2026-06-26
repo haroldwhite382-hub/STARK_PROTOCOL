@@ -23,6 +23,7 @@ body {
   color: #FFFFFF;
   font-family: 'Rajdhani', sans-serif;
   overflow-x: hidden;
+  transition: opacity 0.5s ease;
 }
 
 #arrival-hall {
