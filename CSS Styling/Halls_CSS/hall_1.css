@@ -19,7 +19,69 @@
     margin-bottom: 50px;
     padding: 30px 0;
     border-bottom: 1px solid rgba(94, 223, 255, 0.3);
-    color: #153DB4;
-    font-family: 'Orbitron-Medium.ttf';
+    color: cyan;
+    font-family: 'Orbitron';
+    font-size: 0.6rem;
+    letter-spacing: 6px;
 }
 
+#hall-header h2{
+    font-family: 'Orbitron';
+    color: cyan;
+}
+
+#hall-header h1{
+    font-family: 'Orbitron';
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    letter-spacing: 8px;
+    font-weight: 900;
+}
+
+.panel {
+  background: #1A1F2E;
+  border: 1px solid rgba(94, 223, 255, 0.2);
+  border-left: 3px solid #5EDFFF;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.panel-title {
+    font-size: 0.6rem;
+    letter-spacing: 5px;
+}
+
+.panel-text {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    line-height: 1.8;
+}
+
+.panel-text1 {
+    font-family: 'Orbitron';
+    color: #D4AF37;
+    text-shadow:
+    0 0 1px #D4AF37;
+}
+
+#subject-image {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+#subject-image img {
+  width: 60%;
+  max-width: 300px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 20px rgba(94, 223, 255, 0.3));
+}
+
+#image-caption {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.55rem;
+  letter-spacing: 4px;
+  color: rgba(94, 223, 255, 0.6);
+  margin-top: 10px;
+}
