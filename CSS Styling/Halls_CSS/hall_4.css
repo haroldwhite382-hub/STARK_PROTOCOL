@@ -42,16 +42,21 @@ body {
     font-weight: 900;
 }
 
-#intro-qoute {
+#intro-quote {
+    text-align: center;
     font-family: 'Orbitron';
     color: #D4AF37;
-    text-align: center;
+    padding: 10 px 20px;
 }
 
 #intro-sub {
     color: #C8C8C8;
     font-family: 'Rajdhani';
     text-align: center;
+}
+
+#hall-4-intro {
+    border-bottom: 1px solid skyblue;
 }
 
 #next-btn {
