@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Orbitron';
-    src: url(../Assets/Fonts/Orbitron-Medium.ttf);
+  font-family: 'Orbitron';
+  src: url(../Assets/Fonts/Orbitron-Medium.ttf);
 }
 
 @font-face {
@@ -9,112 +9,47 @@
 }
 
 body {
-    transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
 }
 
-#hall_1 {
-    max-width: 900px;
-    margin: 0px auto;
-    padding: 40px 20px;
+/* Main container – changed from #hall_1 to #hall_3 */
+#hall_3 {
+  max-width: 900px;
+  margin: 0px auto;
+  padding: 40px 20px;
 }
 
+/* Header block */
 #hall-header {
-    text-align: center;
-    margin-bottom: 50px;
-    padding: 30px 0;
-    border-bottom: 1px solid rgba(94, 223, 255, 0.3);
-    color: cyan;
-    font-family: 'Orbitron';
-    font-size: 0.6rem;
-    letter-spacing: 6px;
-}
-
-#hall-header h2{
-    font-family: 'Orbitron';
-    color: cyan;
-}
-
-#hall-header h1{
-    font-family: 'Orbitron';
-    color: #FFFFFF;
-    font-size: 2.5rem;
-    letter-spacing: 8px;
-    font-weight: 900;
-}
-
-.panel {
-  background: #1A1F2E;
-  border: 1px solid rgba(94, 223, 255, 0.2);
-  border-left: 3px solid #5EDFFF;
-  padding: 25px;
-  margin-bottom: 20px;
-  border-radius: 4px;
-}
-
-.panel-title {
-    font-size: 0.6rem;
-    letter-spacing: 5px;
-}
-
-.panel-text {
-    font-size: 1.1rem;
-    letter-spacing: 1px;
-    line-height: 1.8;
-}
-
-.panel-text1 {
-    font-family: 'Orbitron';
-    color: #D4AF37;
-    text-shadow:
-    0 0 1px #D4AF37;
-}
-
-#subject-image {
   text-align: center;
-  margin-bottom: 40px;
-  position: relative;
+  margin-bottom: 50px;
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(94, 223, 255, 0.3);
+  color: cyan;
+  font-family: 'Orbitron';
+  font-size: 0.6rem;
+  letter-spacing: 6px;
 }
 
-#subject-image img {
-  width: 60%;
-  max-width: 300px;
-  object-fit: contain;
-  filter: drop-shadow(0 0 20px rgba(94, 223, 255, 0.3));
+
+#Archive-label {
+  margin: 0;
 }
 
-#image-caption {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 0.55rem;
-  letter-spacing: 4px;
-  color: rgba(94, 223, 255, 0.6);
-  margin-top: 10px;
+#hall-header h1 {
+  font-family: 'Orbitron';
+  color: #FFFFFF;
+  font-size: 2.5rem;
+  letter-spacing: 8px;
+  font-weight: 900;
 }
 
-#next-btn {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 0.75rem;
-  letter-spacing: 3px;
-  color: #5EDFFF;
-  background: transparent;
-  border: 1px solid #5EDFFF;
-  padding: 7px 10px;
-  cursor: pointer;
-  text-transform: uppercase;
-  border-radius: 3px;
-  padding-bottom: 20px 10px;
+#hall-header h2 {
+  font-family: 'Orbitron';
+  color: cyan;
 }
 
-.fade-hidden {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
+/* Suit panel – flex layout */
 .suit-panel {
   display: flex;
   align-items: center;
@@ -132,4 +67,45 @@ body {
 
 .suit-info {
   flex: 1;
+}
+
+.suit-designation {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  color: #5EDFFF;
+  letter-spacing: 4px;
+  margin-bottom: 6px;
+}
+
+.suit-movie {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.6rem;
+  color: #D4AF37;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.suit-fact {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.suit-description {
+  font-size: 1rem;
+  color: #FFFFFF;
+  line-height: 1.8;
+}
+
+/* Animation classes */
+.fade-hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
