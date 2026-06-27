@@ -103,3 +103,33 @@ body {
   border-radius: 3px;
   padding-bottom: 20px 10px;
 }
+
+.fade-hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.suit-panel {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 20px;
+  border-bottom: 1px solid rgba(94, 223, 255, 0.1);
+}
+
+.suit-image img {
+  width: 35vw;
+  max-width: 200px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 15px rgba(94, 223, 255, 0.3));
+}
+
+.suit-info {
+  flex: 1;
+}
