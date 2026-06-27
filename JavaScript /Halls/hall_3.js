@@ -13,6 +13,6 @@ document.querySelectorAll('.suit-panel').forEach(function(panel) {
 document.getElementById('next-btn').onclick = function() {
   document.body.style.opacity = '0';
   setTimeout(function() {
-    window.location.href = '/Pages/hall_4.html';
+    window.location.href = '../Pages/hall_4.html';
   }, 500);
 };
