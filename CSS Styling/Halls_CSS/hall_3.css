@@ -12,7 +12,7 @@ body {
   transition: opacity 0.5s ease;
 }
 
-/* Main container – changed from #hall_1 to #hall_3 */
+/* Main container */
 #hall_3 {
   max-width: 900px;
   margin: 0px auto;
@@ -30,7 +30,6 @@ body {
   font-size: 0.6rem;
   letter-spacing: 6px;
 }
-
 
 #Archive-label {
   margin: 0;
@@ -56,6 +55,10 @@ body {
   gap: 30px;
   padding: 40px 20px;
   border-bottom: 1px solid rgba(94, 223, 255, 0.1);
+}
+
+#hall_3 .suit-panel:nth-child(even) {
+  flex-direction: row-reverse;
 }
 
 .suit-image img {
@@ -98,6 +101,7 @@ body {
   line-height: 1.8;
 }
 
+
 /* Animation classes */
 .fade-hidden {
   opacity: 0;
@@ -109,3 +113,4 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
