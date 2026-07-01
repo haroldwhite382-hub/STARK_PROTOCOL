@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Orbitron';
-    src: url(../Assets/Fonts/Orbitron-Medium.ttf);
+  font-family: 'Orbitron';
+  src: url(../Assets/Fonts/Orbitron-Medium.ttf);
 }
 
 @font-face {
@@ -9,54 +9,98 @@
 }
 
 body {
-    transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
 }
 
-#hall_1 {
-    max-width: 900px;
-    margin: 0px auto;
-    padding: 40px 20px;
+/* Main container – corrected from #hall_1 to #hall_4 */
+#hall_4 {
+  max-width: 900px;
+  margin: 0px auto;
+  padding: 40px 20px;
 }
 
+/* Header block */
 #hall-header {
-    text-align: center;
-    margin-bottom: 50px;
-    padding: 30px 0;
-    border-bottom: 1px solid rgba(94, 223, 255, 0.3);
-    color: cyan;
-    font-family: 'Orbitron';
-    font-size: 0.6rem;
-    letter-spacing: 6px;
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(94, 223, 255, 0.3);
+  color: cyan;
+  font-family: 'Orbitron';
+  font-size: 0.6rem;
+  letter-spacing: 6px;
 }
 
-#hall-header h2{
-    font-family: 'Orbitron';
-    color: cyan;
+#archive-label {
+  margin: 0; /* inherits header styling */
 }
 
-#hall-header h1{
-    font-family: 'Orbitron';
-    color: #FFFFFF;
-    font-size: 2.5rem;
-    letter-spacing: 8px;
-    font-weight: 900;
+#hall-header h1 {
+  font-family: 'Orbitron';
+  color: #FFFFFF;
+  font-size: 2.5rem;
+  letter-spacing: 8px;
+  font-weight: 900;
+}
+
+#hall-header h2 {
+  font-family: 'Orbitron';
+  color: cyan;
+}
+
+/* Intro section */
+#hall-4-intro {
+  text-align: center;
+  padding: 40px 20px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid rgba(94, 223, 255, 0.2);
 }
 
 #intro-quote {
-    text-align: center;
-    font-family: 'Orbitron';
-    color: #D4AF37;
-    padding: 10 px 20px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.1rem;
+  color: #D4AF37;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  line-height: 1.8;
 }
 
-#intro-sub {
-    color: #C8C8C8;
-    font-family: 'Rajdhani';
-    text-align: center;
+.intro-sub {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 1px;
 }
 
-#hall-4-intro {
-    border-bottom: 1px solid skyblue;
+/* Value cards */
+.value-card {
+  background: #1A1F2E;
+  border: 1px solid rgba(94, 223, 255, 0.2);
+  border-left: 3px solid #5EDFFF;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.value-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.8rem;
+  color: #5EDFFF;
+  letter-spacing: 5px;
+  margin-bottom: 12px;
+}
+
+.value-text {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1rem;
+  color: #FFFFFF;
+  line-height: 1.8;
+}
+
+/* Navigation button */
+#hall-nav {
+  text-align: center;
+  margin-top: 40px;
 }
 
 #next-btn {
@@ -66,9 +110,25 @@ body {
   color: #5EDFFF;
   background: transparent;
   border: 1px solid #5EDFFF;
-  padding: 7px 10px;
+  padding: 10px 20px;          /* fixed invalid syntax */
   cursor: pointer;
   text-transform: uppercase;
   border-radius: 3px;
-  padding-bottom: 20px 10px;
+  transition: background 0.3s ease;
+}
+
+#next-btn:hover {
+  background: rgba(94, 223, 255, 0.1);
+}
+
+/* Animation classes (shared across halls) */
+.fade-hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
