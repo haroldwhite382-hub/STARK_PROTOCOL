@@ -1,5 +1,5 @@
-
 window.onload = function() {
+
   let observer = new IntersectionObserver(function(entries) {
     entries.forEach(function(entry) {
       if (entry.isIntersecting) {
@@ -18,4 +18,5 @@ window.onload = function() {
       window.location.href = '/Pages/hall_5.html';
     }, 500);
   };
+
 };
