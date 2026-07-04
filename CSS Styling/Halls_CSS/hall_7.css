@@ -1,0 +1,128 @@
+body {
+  transition: opacity 0.5s ease;
+}
+
+#hall_7 {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+#hall-header {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.4);
+  color: #D4AF37;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 6px;
+}
+
+#archive-label {
+  margin: 0;
+}
+
+#subject-name {
+  font-family: 'Orbitron', sans-serif;
+  color: #FFFFFF;
+  font-size: 2rem;
+  letter-spacing: 8px;
+  font-weight: 900;
+  margin: 15px 0;
+}
+
+#hall-header h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #D4AF37;
+  font-size: 0.65rem;
+  letter-spacing: 5px;
+}
+
+.dossier-field {
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-left: 3px solid #D4AF37;
+  background: #1A1F2E;
+  padding: 20px 25px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+
+.field-label {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.55rem;
+  color: #D4AF37;
+  letter-spacing: 5px;
+  margin-bottom: 8px;
+}
+
+.field-value {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1rem;
+  color: #FFFFFF;
+  line-height: 1.8;
+  letter-spacing: 1px;
+}
+
+#archivist-note {
+  margin-top: 40px;
+  padding: 30px;
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  border-top: 3px solid #D4AF37;
+  background: #1A1F2E;
+  border-radius: 4px;
+}
+
+#note-label {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.55rem;
+  color: #D4AF37;
+  letter-spacing: 5px;
+  margin-bottom: 16px;
+}
+
+#note-text {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+#hall-nav {
+  text-align: center;
+  margin-top: 50px;
+  padding-bottom: 40px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.8s ease;
+}
+
+#next-btn {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  color: #D4AF37;
+  background: transparent;
+  border: 1px solid #D4AF37;
+  padding: 12px 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 3px;
+  transition: background 0.3s ease;
+}
+
+#next-btn:hover {
+  background: rgba(212, 175, 55, 0.1);
+}
+
+.fade-hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
