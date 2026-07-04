@@ -1,14 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../CSS Styling/Style.css">
+  <link rel="stylesheet" href="../CSS Styling/Halls_CSS/hall_6.css">
+  <title>Hall 6</title>
 </head>
 
 <body>
     
+    <div id="hall_6">
+
+  <!-- Phase 1: Analysis terminal -->
+  <div id="analysis-terminal">
+    <p class="terminal-line" id="line-1"></p>
+    <p class="terminal-line" id="line-2"></p>
+    <p class="terminal-line" id="line-3"></p>
+    <p class="terminal-line" id="line-4"></p>
+  </div>
+
+  <!-- Phase 2: Match found (hidden initially) -->
+  <div id="match-found" class="hidden">
+    <p id="match-text">MATCH FOUND.</p>
+  </div>
+
+  <!-- Phase 3: Subject reveal (hidden initially) -->
+  <div id="subject-reveal" class="hidden">
+    <p id="reveal-label">SUBJECT FILE UPDATED</p>
+    <h1 id="subject-name">CRISTO SONY JOSEPH</h1>
+    <p id="reveal-sub">SUCCESSOR IDENTIFIED. ARCHIVE UNLOCKED.</p>
+  </div>
+
+  <!-- Phase 4: Navigation (hidden initially) -->
+  <div id="hall-nav" class="hidden">
+    <button id="next-btn">ACCESS SUBJECT FILE →</button>
+  </div>
+
+</div>
+  
+    <script src="../JavaScript/Script.js"></script>
+    <script src="/JavaScript /Halls/hall_6.js"></script>
 </body>
 
 </html>
