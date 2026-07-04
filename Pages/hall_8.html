@@ -1,14 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../CSS Styling/Style.css">
+  <link rel="stylesheet" href="../CSS Styling/Halls_CSS/hall_8.css">
+  <title>E.D.I.T.H. Protocol</title>
 </head>
 
 <body>
-    
+  <div id="hall_8">
+
+    <!-- Phase 1: J.A.R.V.I.S. closing -->
+    <div id="jarvis-closing">
+      <p class="terminal-line" id="j-line-1"></p>
+      <p class="terminal-line" id="j-line-2"></p>
+      <p class="terminal-line" id="j-line-3"></p>
+    </div>
+
+    <!-- Phase 2: System handoff -->
+    <div id="handoff-sequence" class="hidden">
+      <p class="handoff-line" id="h-line-1"></p>
+      <p class="handoff-line" id="h-line-2"></p>
+      <p class="handoff-line" id="h-line-3"></p>
+      <p class="handoff-line" id="h-line-4"></p>
+    </div>
+
+    <!-- Phase 3: E.D.I.T.H. message -->
+    <div id="edith-message" class="hidden">
+      <p id="edith-label">E.D.I.T.H. ONLINE</p>
+      <p id="edith-text"></p>
+    </div>
+
+    <!-- Phase 4: Personal message -->
+    <div id="personal-message" class="hidden">
+      <p id="personal-label">FROM HAROLD</p>
+      <p id="personal-text"></p>
+    </div>
+
+    <!-- Phase 5: Power down -->
+    <div id="power-down" class="hidden">
+      <button id="power-btn">POWER DOWN</button>
+    </div>
+
+    <!-- Phase 6: Final screen -->
+    <div id="final-screen" class="hidden">
+      <p id="final-message">Archive Successfully Preserved.</p>
+      <span id="cursor">▋</span>
+    </div>
+
+  </div>
+
+  <script src="../JavaScript/Script.js"></script>
+  <script src="/JavaScript /Halls/hall_8.js"></script>
 </body>
 
 </html>
