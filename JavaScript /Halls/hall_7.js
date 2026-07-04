@@ -57,7 +57,7 @@ window.onload = function() {
         nav.style.opacity = '1';
         nav.style.pointerEvents = 'auto';
       }
-    }, 30);
+    }, 35);
   }
 
 };
