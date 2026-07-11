@@ -83,7 +83,7 @@ window.onload = function() {
   // Phase 4 — Personal message from Harold
   function startPersonal() {
     showElement('personal-message', function() {
-      let personalText = `Cristo.\n\nI am not good at saying things like this out loud.\n\nSo I built something instead.\n\nYou have been a good friend. Quietly, consistently, without making a big deal of it. You showed up. You trusted me with things that mattered. You made ordinary school days worth remembering.\n\nI noticed.\n\nHappy Birthday.\n\n— Harold`;
+      let personalText = `Cristo.\n\nYou have been a good friend. Quietly, consistently, without making a big deal of it. You showed up. You trusted me with things that mattered. You made ordinary school days worth remembering.\n\nI noticed.\n\nHappy Birthday.\n\n— Harold`;
       typeWriter('personal-text', personalText, 45, function() {
         setTimeout(function() {
           showElement('power-down', null);
