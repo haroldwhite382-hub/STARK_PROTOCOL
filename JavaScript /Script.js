@@ -22,5 +22,35 @@ window.onload = function() {
       clearInterval(interval);
     }
   }, 80);
+  
+  if (document.getElementById('arc-reactor')) {
+  anime({
+    targets: '.reactor-core',
+    boxShadow: [
+      '0 0 10px #5EDFFF, 0 0 20px #5EDFFF, 0 0 40px rgba(94, 223, 255, 0.5)',
+      '0 0 20px #5EDFFF, 0 0 40px #5EDFFF, 0 0 80px rgba(94, 223, 255, 0.8)',
+      '0 0 10px #5EDFFF, 0 0 20px #5EDFFF, 0 0 40px rgba(94, 223, 255, 0.5)'
+    ],
+    duration: 2000,
+    easing: 'easeInOutSine',
+    loop: true
+  });
+
+  anime({
+    targets: '.reactor-ring.outer',
+    rotate: 360,
+    duration: 8000,
+    easing: 'linear',
+    loop: true
+  });
+
+  anime({
+    targets: '.reactor-ring.middle',
+    rotate: -360,
+    duration: 5000,
+    easing: 'linear',
+    loop: true
+  });
+}
 
 };

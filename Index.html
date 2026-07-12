@@ -5,10 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="CSS Styling/Style.css">
+  <link rel="stylesheet" href="CSS Styling/hall_0.css">
   <title>STARK PROTOCOL</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 </head>
 
 <body>
+  
+  <div id="hud-overlay">
+    <div id="system-status">
+      <p id="status-label"  >STARK INDUSTRIES</p>
+      <p id="status-value">⬤ SYSTEMS ONLINE</p>
+    </div>
+    <div id="hud-clock">
+      <p id="clock-time">00:00:00</p>
+      <p id="clock-date">LOADING...</p>
+    </div>
+  </div>
 
   <div id="arrival-hall">
 
@@ -18,6 +31,11 @@
     </div>
 
     <div id="jarvis-message">
+      <div id="arc-reactor">
+        <div class="reactor-ring outer"></div>
+        <div class="reactor-ring middle"></div>
+        <div class="reactor-core"></div>
+      </div>
       <p id="jarvis-text"></p>
       <button id="enter-btn">ENTER ARCHIVE</button>
     </div>
@@ -29,8 +47,9 @@
 
   </div>
 
-  <script src="/JavaScript /Script.js"></script>
+  <script src="/JavaScript/Script.js"></script>
+  <script src="/JavaScript /Halls/Hall_0.js"></script>
 
 </body>
 
-</html>
+</html> 

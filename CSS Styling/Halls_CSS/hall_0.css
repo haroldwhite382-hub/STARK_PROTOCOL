@@ -1,0 +1,10 @@
+body {
+  background-image: 
+    linear-gradient(rgba(94, 223, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(94, 223, 255, 0.05) 1px, transparent 1px),
+    url('/Assets/Images/Stark_tower.png');
+  background-size: 50px 50px, 50px 50px, cover;
+  background-position: center;
+  background-repeat: repeat, repeat, no-repeat;
+  background-attachment: fixed;
+}
