@@ -1,3 +1,4 @@
+
 window.onload = function() {
 
   // Reusable typewriter function
@@ -93,15 +94,51 @@ window.onload = function() {
   }
 
   // Phase 5 — Power down sequence
-  document.getElementById('power-btn').onclick = function() {
-    let finalScreen = document.getElementById('final-screen');
-    finalScreen.classList.remove('hidden');
-    setTimeout(function() {
-      finalScreen.style.opacity = '1';
-      setTimeout(function() {
-        document.getElementById('final-message').style.opacity = '1';
-      }, 1500);
-    }, 100);
-  };
+document.getElementById('power-btn').onclick = function() {
+  // Play shutdown sound
+  let shutdownSound = new Audio('../Assets/Audio/Shutdown.wav');
+  shutdownSound.volume = 0.7;
+  shutdownSound.play();
+
+  // Disable button so it can't be clicked twice
+  let btn = document.getElementById('power-btn');
+  btn.disabled = true;
+  btn.style.pointerEvents = 'none';
+
+  // Fade out the rest of the page content first
+  anime({
+    targets: '#hall_8 > div:not(#final-screen)',
+    opacity: [1, 0],
+    duration: 800,
+    easing: 'easeOutQuad'
+  });
+
+  let finalScreen = document.getElementById('final-screen');
+  finalScreen.classList.remove('hidden');
+
+  setTimeout(function() {
+    anime({
+      targets: finalScreen,
+      opacity: [0, 1],
+      duration: 1200,
+      easing: 'easeInOutQuad',
+      complete: function() {
+        anime({
+          targets: '#final-message',
+          opacity: [0, 1],
+          duration: 1000,
+          delay: 400,
+          easing: 'easeInOutQuad',
+          complete: function() {
+            // Hold on the final message, then redirect
+            setTimeout(function() {
+              window.location.href = '../Index.html';
+            }, 3500);
+          }
+        });
+      }
+    });
+  }, 900);
+};
 
 };
