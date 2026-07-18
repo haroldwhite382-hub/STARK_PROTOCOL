@@ -1,3 +1,4 @@
+
 function updateClock() {
   let now = new Date();
   let hours = String(now.getHours()).padStart(2, '0');
