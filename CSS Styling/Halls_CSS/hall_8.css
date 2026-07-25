@@ -126,6 +126,7 @@ body {
   opacity: 0;
   transition: opacity 1.5s ease;
   z-index: 999;
+  pointer-events: none;
 }
 
 #final-message {
@@ -148,5 +149,5 @@ body {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }

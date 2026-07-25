@@ -96,7 +96,7 @@ window.onload = function() {
   // Phase 5 — Power down sequence
 document.getElementById('power-btn').onclick = function() {
   // Play shutdown sound
-  let shutdownSound = new Audio('../Assets/Audio/Shutdown.wav');
+  let shutdownSound = new Audio('../Assets/Audio/Button_Click.mp3');
   shutdownSound.volume = 0.7;
   shutdownSound.play();
 
