@@ -4,23 +4,57 @@
 }
 
 body {
-    background: black;
+  background: black;
 }
 
-img{
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
+#ironman {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  right: -100px;
+  opacity: 0;
 }
 
-.start-txt {
-    font-family: Orbitron;
-    color: #C0C0C0;
-    text-shadow: 
-    0 0 5px #FFFFFF
+#title {
+  font-family: 'Orbitron', sans-serif;
+  color: #C0C0C0;
+  text-shadow:
+    0 0 5px #FFFFFF,
     0 0 10px #C0C0C0;
-    font-size: 18px;
-    position: absolute;
-    left: 10%;
-    bottom: 40%;
+  font-size: 18px;
+  position: absolute;
+  left: 10%;
+  bottom: 40%;
+  opacity: 0;
+}
+
+#e {
+  appearance: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+
+  outline: none;
+
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  right: 8%;
+  bottom: 8%;
+  border-radius: 50%;
+
+  background: rgba(129, 251, 255, 0.08);
+  border: 1px solid rgba(129, 251, 255, 0.15);
+  color: transparent;
+  cursor: pointer;
+
+  transition: transform 0.15s ease;
+}
+
+#e:focus {
+  outline: none;
+}
+
+#e:active {
+  transform: scale(0.95);
 }
