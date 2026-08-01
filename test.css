@@ -15,9 +15,12 @@ img{
 
 .start-txt {
     font-family: Orbitron;
-    color: #103EC6;
+    color: #C0C0C0;
+    text-shadow: 
+    0 0 5px #FFFFFF
+    0 0 10px #C0C0C0;
     font-size: 18px;
     position: absolute;
     left: 10%;
-    bottom: 20%;
+    bottom: 40%;
 }
