@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Orbitron';
+  src: url('/Assets/Fonts/Orbitron-Bold.ttf');
+}
+
+body {
+    background: black;
+}
+
+img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.start-txt {
+    font-family: Orbitron;
+    color: #103EC6;
+    font-size: 18px;
+    position: absolute;
+    left: 10%;
+    bottom: 20%;
+}
