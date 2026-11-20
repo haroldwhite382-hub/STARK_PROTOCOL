@@ -3,53 +3,32 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="CSS Styling/Style.css">
-  <link rel="stylesheet" href="CSS Styling/hall_0.css">
+  <meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>STARK PROTOCOL</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <link rel="stylesheet" href="CSS Styling/Index.css">
 </head>
 
 <body>
+  <div id="ironman-container"><img id="ironman" src="Assets/Images/Iron Man Images/Iron_Man.jpg" alt="Iron Man">
+    </div>
 
-  <div id="hud-overlay">
-    <div id="system-status">
-      <p id="status-label">STARK INDUSTRIES</p>
-      <p id="status-value">⬤ SYSTEMS ONLINE</p>
-    </div>
-    <div id="hud-clock">
-      <p id="clock-time">00:00:00</p>
-      <p id="clock-date">LOADING...</p>
-    </div>
+  <div id="intro">
+    <h2>STARK INDUSTRIES ARCHIVE</h2>
+
+    <p>
+        Access Level: Visitor<br><br>
+
+        Welcome to the Stark Industries Digital Archive.<br>
+        This exhibit documents the life, technology,<br>
+        and legacy of Tony Stark.<br><br>
+
+        Tap the Arc Reactor to begin.
+    </p>
   </div>
+  <button id="e" aria-label="Arc Reactor"></button>
 
-  <div id="arrival-hall">
-
-    <div id="stark-figure" class="figure">
-      <img src="/Assets/Images/Iron Man Images/Tony_Stark.png" alt="Tony Stark" />
-      <p class="figure-label">TONY STARK</p>
-    </div>
-
-    <div id="jarvis-message">
-      <div id="arc-reactor">
-        <div class="reactor-ring outer"></div>
-        <div class="reactor-ring middle"></div>
-        <div class="reactor-core"></div>
-      </div>
-      <p id="jarvis-text"></p>
-      <button id="enter-btn">ENTER ARCHIVE</button>
-    </div>
-
-    <div id="rdj-figure" class="figure">
-      <img src="/Assets/Images/Iron Man Images/Mark 50 Suit.png" alt="Iron Man" />
-      <p class="figure-label">IRON MAN</p>
-    </div>
-
-  </div>
-
-  <script src="/JavaScript /Script.js"></script>
-  <script src="/JavaScript /Halls/Hall_0.js"></script>
-
+  <script src="JavaScript /Index.js"></script>
 </body>
 
 </html>
