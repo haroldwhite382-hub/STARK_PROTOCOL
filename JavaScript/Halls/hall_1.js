@@ -1,5 +1,4 @@
 // Navigation button
-console.log("hello there!");
 const nextButton = document.getElementById('next-btn');
 
 if (nextButton) {

@@ -1,13 +1,3 @@
-@font-face {
-  font-family: 'Orbitron';
-  src: url(../Assets/Fonts/Orbitron-Medium.ttf);
-}
-
-@font-face {
-  font-family: 'Rajdhani';
-  src: url('../Assets/Fonts/Rajdhani-Medium.ttf');
-}
-
 html,
 body {
   margin: 0;

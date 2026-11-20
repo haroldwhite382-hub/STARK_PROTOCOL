@@ -132,7 +132,7 @@ document.getElementById('power-btn').onclick = function() {
           complete: function() {
             // Hold on the final message, then redirect
             setTimeout(function() {
-              window.location.href = '../Index.html';
+              window.location.href = '../index.html';
             }, 3500);
           }
         });
