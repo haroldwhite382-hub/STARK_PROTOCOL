@@ -1,14 +1,142 @@
-body {
-  transition: opacity 0.5s ease;
+@font-face {
+  font-family: 'Orbitron';
+  src: url(../Assets/Fonts/Orbitron-Medium.ttf);
 }
 
+@font-face {
+  font-family: 'Rajdhani';
+  src: url('../Assets/Fonts/Rajdhani-Medium.ttf');
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  touch-action: pan-y;
+}
+
+body {
+  background: #000000;
+  transition: opacity 0.5s ease;
+  animation: pageIn 1s ease;
+}
+
+@keyframes pageIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#hall_6 {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* Header */
+#hall-header {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+#hall-header p {
+  margin: 0 0 14px 0;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 6px;
+  color: #B5B5B5;
+}
+
+#hall-header h1 {
+  margin: 0 0 12px 0;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 6px;
+  color: #F2F2F2;
+}
+
+#hall-header h2 {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: #B5B5B5;
+}
+
+/* Scroll reveal (same idea as hall 1 info cards) */
+.fade-hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Navigation button */
+#hall-nav {
+  text-align: center;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
+#next-btn {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  color: #B5B5B5;
+  background: transparent;
+  border: 1px solid #B5B5B5;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 3px;
+  transition: background 0.3s ease;
+}
+
+#next-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Shared terminal text */
+.terminal-line {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.7rem;
+  color: #B5B5B5;
+  letter-spacing: 3px;
+  margin: 0 0 16px 0;
+  min-height: 1.2em;
+}
+
+/* ---- Hall 6: analysis + reveal ---- */
 #hall_6 {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 40px 20px;
   text-align: center;
 }
 
@@ -16,21 +144,13 @@ body {
   margin-bottom: 60px;
 }
 
-.terminal-line {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 0.7rem;
-  color: #5EDFFF;
-  letter-spacing: 3px;
-  margin-bottom: 16px;
-  min-height: 1.2em;
-}
-
 #match-text {
   font-family: 'Orbitron', sans-serif;
   font-size: 1.5rem;
-  color: #B22222;
+  color: #F2F2F2;
   letter-spacing: 6px;
-  margin-bottom: 60px;
+  margin: 0 0 60px 0;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.5);
 }
 
 #subject-reveal {
@@ -40,49 +160,28 @@ body {
 #reveal-label {
   font-family: 'Orbitron', sans-serif;
   font-size: 0.6rem;
-  color: rgba(94, 223, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
   letter-spacing: 5px;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
 }
 
 #subject-name {
   font-family: 'Orbitron', sans-serif;
   font-size: 2rem;
-  color: #FFFFFF;
+  color: #F2F2F2;
   letter-spacing: 8px;
   font-weight: 900;
-  margin-bottom: 16px;
+  margin: 0 0 16px 0;
 }
 
 #reveal-sub {
   font-family: 'Orbitron', sans-serif;
   font-size: 0.6rem;
-  color: #D4AF37;
+  color: #B5B5B5;
   letter-spacing: 4px;
-}
-
-.hidden {
-  display: none;
+  margin: 0;
 }
 
 #hall-nav {
   margin-top: 40px;
-}
-
-#next-btn {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 0.75rem;
-  letter-spacing: 3px;
-  color: #5EDFFF;
-  background: transparent;
-  border: 1px solid #5EDFFF;
-  padding: 12px 30px;
-  cursor: pointer;
-  text-transform: uppercase;
-  border-radius: 3px;
-  transition: background 0.3s ease;
-}
-
-#next-btn:hover {
-  background: rgba(94, 223, 255, 0.1);
 }

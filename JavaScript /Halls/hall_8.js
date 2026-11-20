@@ -52,10 +52,10 @@ window.onload = function() {
     handoff.style.opacity = '1';
 
     let lines = [
-      { id: 'h-line-1', text: 'TRANSFERRING CONTROL...', color: '#5EDFFF' },
-      { id: 'h-line-2', text: 'J.A.R.V.I.S. OFFLINE.', color: '#5EDFFF' },
-      { id: 'h-line-3', text: 'INITIALIZING E.D.I.T.H...', color: '#D4AF37' },
-      { id: 'h-line-4', text: 'E.D.I.T.H. ONLINE.', color: '#D4AF37' }
+      { id: 'h-line-1', text: 'TRANSFERRING CONTROL...', color: '#B5B5B5' },
+      { id: 'h-line-2', text: 'J.A.R.V.I.S. OFFLINE.', color: '#B5B5B5' },
+      { id: 'h-line-3', text: 'INITIALIZING E.D.I.T.H...', color: '#F2F2F2' },
+      { id: 'h-line-4', text: 'E.D.I.T.H. ONLINE.', color: '#F2F2F2' }
     ];
 
     let delay = 0;

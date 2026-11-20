@@ -32,7 +32,7 @@ window.onload = function() {
   document.getElementById('next-btn').onclick = function() {
     document.body.style.opacity = '0';
     setTimeout(function() {
-      window.location.href = '/Pages/hall_8.html';
+      window.location.href = '../Pages/hall_8.html';
     }, 500);
   };
 
